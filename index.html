@@ -5,11 +5,9 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <!--
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p> -->
     <header class="page-header"> 
       <nav class="navigation-header">
-        <img class="header-logo" src="/files/sedona-logo.svg" alt="Логотип Седоны">
+        <img class="header-logo" src="./images/contents/logo.png" alt="Логотип Седоны">
         <ol class="navigation-list">
           <li class="navigation-item"> 
             <a class="navigation-link" href="#">Главная</a>
@@ -25,12 +23,16 @@
         <ol class="navigation-list">
           <li class="navigation-item"> 
             <a class="navigation-link" href="#">
+              <!--Антон, есть вопрос по доступности при работе скринридеров. Нужно связаться для короткого разговора. До созвона я ещё раз прочитаю статью о доступности, может вопросы сами отпадут.-->
+              <img class="header-icon" src="./images/contents/icons/search.svg" alt="Лупа">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item"> 
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поставить лайк</span>
+              <img class="header-icon" src="./images/contents/icons/favorite.svg" alt="Сердечко">
+              <span class="visually-hidden">Избранное</span>
+              <!--Зеленый круг прилеплю через див зеленого цвета с бордер радиус 50%, внутрь него запихну число-->
             </a>
           </li>
           <li class="navigation-item"> 
@@ -43,10 +45,12 @@
     <main>
       <section class="intro">
         <h1 class="visually-hidden">Отдых в Седоне, штат Аризона</h1>
-        <img class="intro-welcome" src="/files/welcome.svg" alt="Приветсвие">
-          <i>to the gorgeos</i>
-        <p><b>Sedona</b></p>
-        <p><em><q>Because the grand canyon sucks!</q></em></p>
+        <img class="intro-background" src="./images/decorations/intro-background.jpg" alt="Вид на горное ущелье">
+        <img class="intro-welcome" src="./images/contents/welcome.svg" alt="Welcome">
+        <img class="intro-oblique" src="./images/contents/oblique-1.svg" alt="— To the gorgeous —">
+        <img class="intro-slogan" src="./images/contents/slogan.svg" alt="Because the Grand Canyon sucks!">
+        <!--Подозреваю, что три картинки сверху могут быть одного класса, при стилизации они будут своего реального размера 1 к 1 и позиционирование по центру. Но не уверен, пусть пока будет три разных класса. Кроме того, думаю, что их можно будет обернуть в один див, чтобы потом удобно было их разместить поверх картинки.-->
+        <img class="intro-mask" src="./images/contents/index-background-mask.jpg" alt="Фигура оформления фона">
         <p class="intro-title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</p>
         <p class="intro-subtitile">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -59,33 +63,37 @@
             <h3 class="reason-header">Настоящий городок</h3>
             <p class="reason-number">-№ 1-</p>
             <p class="reason-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="reason-photo" src="./images/decorations/reasons-photo-1.jpg" alt="Панорама на улицы Седоны">
           </li>
 
           <li class="reason-item">
             <ul class="services-list">
               <li class="services-item">
+                <img class="service-icon" src="./images/contents/icons/home-big.svg" alt="Домик">
                 <h3 class="services-header">Жильё</h3>
                 <span class="services-text">Рекомендуем пожить в настоящем мотеле, 
                   всё как в кино!</span>
               </li>
               <li class="services-item">
+                <img class="service-icon" src="./images/contents/icons/food.svg" alt="Бургер">
                 <h3 class="services-header">Еда</h3>
                 <span class="services-text">Всегда заказывайте
                   топовый фирменный бургер, вы не разочаруетесь!</span>
               </li>
               <li class="services-item">
+                <img class="service-icon" src="./images/contents/icons/gift.svg" alt="Подарок">
                 <h3 class="services-header">Сувениры</h3>
                 <span class="services-text">Не только китайского, 
                   но и настоящего местного производства!</span>
               </li>
             </ul>   
-
           </li>
 
           <li class="reasons-item">
             <h3 class="reason-header">Там есть мост дьявола</h3>
             <p class="reason-number">-№ 2-</p>
             <p class="reason-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img class="reason-photo" src="./images/decorations/reasons-photo-2.jpg" alt="Панорама на мост дьявола">
           </li>
           <li class="reasons-item">
             <h3 class="reason-header">Небольшая площадь</h3>
@@ -115,6 +123,7 @@
       </section>
 
       <section class="subscription">
+        <img class="subscription-background" src="./images/decorations/subscribe-background.jpg" alt="Размытый вид на долину">
         <h2 class="visually-hidden">Подписка</h2>
         <p class="section-title subscription-title">Подпишитесь на рассылку</p>
         <p class="section-text subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -132,16 +141,19 @@
           <li class="footer-social-item">
             <a class="footer-social-button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
+              <img class="social-icon" src="./images/contents/icons/vk.svg" alt="Логотип VK">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
+              <img class="social-icon" src="./images/contents/icons/telegram.svg" alt="Логотип телеграм">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">YouTube</span>
+              <img class="social-icon" src="./images/contents/icons/telegram.svg" alt="Логотип youtube">
             </a>
           </li>
         </ul>
@@ -155,9 +167,9 @@
         <h2 class="visually-hidden">Компания разработчик</h2>
         <a class="production-reference" href="https://htmlacademy.ru/">
           <span class="visually-hidden">.html academy</span>
+          <img class="production-icon" src="./images/contents/icons/html-academy.svg" alt="Логотип html-academy">
         </a>
       </section>
-      <!---->
     </footer>
   </body>
 </html>
