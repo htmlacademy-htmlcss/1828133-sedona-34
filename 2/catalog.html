@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона-каталог</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1828133-sedona-34/2/">
+</head>
+  <body>
+    <header class="page-header"> 
+      <nav class="navigation-header">
+        <img class="header-logo" src="./images/contents/logo.png" alt="Логотип Седоны">
+        <ol class="navigation-list">
+          <li class="navigation-item"> 
+            <a class="navigation-link" href="#">Главная</a>
+          </li>
+          <li class="navigation-item"> 
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item"> 
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ol>
+
+        <ol class="navigation-list">
+          <li class="navigation-item"> 
+            <a class="navigation-link" href="#">
+              <img class="header-icon" src="./images/contents/icons/search.svg" alt="Лупа">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item"> 
+            <a class="navigation-link" href="#">
+              <img class="header-icon" src="./images/contents/icons/favorite.svg" alt="Сердечко">
+              <span class="visually-hidden">Избранное</span>
+              <!--Зеленый круг прилеплю через див зеленого цвета с бордер радиус 50%, внутрь него запихну число-->
+            </a>
+          </li>
+          <li class="navigation-item"> 
+            <button class="booking-button">Хочу сюда!</button>
+          </li>
+        </ol>
+      </nav>
+    </header>
+
+    <main>
+      <section class="filter-hotels">
+        <h1 class="hotels-title">Гостиницы Седоны</h1>
+        <form class="hotels-parameters" action="https://echo.htmlacademy.ru/courses" method="post" oninput="costoutput.value=costrange.value">
+          <p class="hotels-subtitle">
+            <img class="subtitle-icon" src="./images/contents/icons/home-little.svg" alt="маленький домик">
+            <img class="subtitle-icon" src="./images/contents/icons/arrow-right.svg" alt="стрелка вправо">
+            Гостиницы
+          </p>
+          <fieldset style="border: 0;">
+            <legend class="infrastructure-title">Инфраструктура</legend>
+            <div class="hotels-infrastructure"> <!--Вот тут я тоже запутся, этот блок является дивом или "абзацем?"-->
+              <!-- <h2 class="infrastructure-title">Инфраструктура</h2> Сначала делал заголовком h2, потом решил добавить филдсет и леджент. Не знаю, нужно ли оствить заголовок скрытым, или он вовсе не нужен-->
+              <input class="infrastructure-item" type="checkbox" id="infrastructure-pool" checked>
+              <label for="infrastructure-pool">Бассейн</label>
+              <input class="infrastructure-item" type="checkbox" id="infrastructure-parking">
+              <label for="infrastructure-parking">Парковка</label>
+              <input class="infrastructure-item" type="checkbox" id="infrastructure-wifi">
+              <label for="infrastructure-item">Wi-Fi</label>
+            </div>
+          </fieldset>
+          <fieldset style="border: 0;">
+            <legend class="infrastructure-title">Тип жилья</legend>
+            <div class="hotels-type">
+              <!-- <h2 class="type-title">Тип жилья</h2> -->
+              <input class="type-item" type="radio" name="hotels-type" id="type-hotel" checked>
+              <label for="type-hotel">Гостиница</label>
+              <input class="type-item" type="radio" name="hotels-type" id="type-motel">
+              <label for="type-motel">Мотель</label>
+              <input class="type-item" type="radio" name="hotels-type" id="type-apartments">
+              <label for="type-apartments">Апартаменты</label>
+            </div>
+          </fieldset>
+          <fieldset style="border: 0;">
+            <legend class="infrastructure-title">Стоимость</legend>
+            <div class="hotels-cost">
+              <!-- <h2 class="cost-title">Стоимость,	&#8381:</h2> -->
+              0 <input class="cost-range" type="range" name="costrange" min="0" max="10000" step="100" value="6000"> 10000
+              <label for="costoutput">Цена за ночь до:</label>
+              <output class="cost-output" name="costoutput" value="6000"></output>
+            </div>
+          </fieldset>
+            <div class="hotels-buttons">
+              <button class="accept-button" type="submit" name="accept-button">Применить</button>
+              <button class="clear-button" type="button" name="clear-button">Сбросить</button>
+            </div>
+          
+        </form>
+      </section>
+
+      <section class="resaults">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <p class="resaults-title">Найдено гостиниц: 38</p>
+        <select class="resaults-priority" name="resaults-priority">
+          <!--Не сообразил какие value прописать. Пока пусть будет такими-->
+          <option value="Сначала дешевые">Сначала дешевые</option>
+          <option value="Сначала дорогие">Сначала дорогие</option>
+          <option value="Сначала с высоким рейтингом">Сначала с высоким рейтингом</option>
+        </select>
+        <ul class="composition">
+            <li class="composition-item">
+                <a class="composition-button active" href="">
+                    <img class="composition-icon" src="./images/contents/icons/icon-table.svg" alt="Таблица">
+                </a>
+            </li>
+            <li>
+                <a class="composition-button" href="">
+                  <img class="composition-icon" src="./images/contents/icons/icon-slideshow.svg" alt="Слайд">
+                </a>
+            </li>
+            <li>
+                <a class="composition-button" href="">
+                  <img class="composition-icon" src="./images/contents/icons/icon-list.svg" alt="Список">
+                </a>
+            </li>
+        </ul>
+        <div class="resaults-cards">
+            <div class="resaults-card">
+                <img class="card-img" src="./images/decorations/hotels-photo/amara-resort-&-spa.jpg" alt="Гостиница Amara Resort and spa">
+                <!--И вот здесь. Следующие ниже блоки это дивы и "абзацы"?-->
+                <p class="card-name">Amara resorts & Spa</p>
+                <p class="card-type">Гостиница</p>
+                <p class="card-price">От 4000 ₽</p>
+                <btn class="card-info">Подробнее</btn>
+                <btn class="card-addfavorits">В избранное</btn>
+                <p class="card-stars">
+                  <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                  <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                  <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                  <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                  <!--Пока придумал два способа
+                      1)лепить нужное количество звезд
+                      2) задавайть класс абзацу cardstars например cardstars-four, а затем через css задать этому абзацу размножение звезд из одной в четыре-->
+                </p>
+                <p class="card-rating">Рейтинг: 8,5</p>
+            </div>
+
+            <div class="resaults-card">
+              <img class="card-img" src="./images/decorations/hotels-photo/villas-at-poco-diablo.jpg" alt="Гостиница Villas at Poco Diablo">
+              <p class="card-name">Villas at Poco Diablo</p>
+              <p class="card-type">Гостиница</p>
+              <p class="card-price">От 5000 ₽</p>
+              <btn class="card-info">Подробнее</btn>
+              <btn class="card-addfavorits">В избранное</btn>
+              <p class="card-stars">
+                <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+              </p>
+              <p class="card-rating">Рейтинг: 9,2</p>
+            </div>
+
+          <div class="resaults-card">
+            <img class="card-img" src="./images/decorations/hotels-photo/desert-quail-inn.jpg" alt="Гостиница Desert Quail Inn">
+            <p class="card-name">Desert Quail Inn</p>
+            <p class="card-type">Гостиница</p>
+            <p class="card-price">От 2500 ₽</p>
+            <btn class="card-info">Подробнее</btn>
+            <btn class="card-addfavorits">В избранное</btn>
+            <p class="card-stars">
+              <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+              <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+              <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+            </p>
+            <p class="card-rating">Рейтинг: 6,9</p>
+          </div>
+
+          <div class="resaults-card">
+            <img class="card-img" src="./images/decorations/hotels-photo/greentree-inn.jpg" alt="Гостиница GreenTree Inn">
+            <p class="card-name">GreenTree Inn</p>
+            <p class="card-type">Гостиница</p>
+            <p class="card-price">От 1500 ₽</p>
+            <btn class="card-info">Подробнее</btn>
+            <btn class="card-addfavorits">В избранное</btn>
+            <p class="card-stars">
+              <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+              <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+            </p>
+            <p class="card-rating">Рейтинг: 5,0</p>
+          </div>
+        </div>
+        <div class="hotels-navigation">
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="footer-social-button" href="#">
+                <span class="visually-hidden">1</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="footer-social-button" href="#">
+                <span class="visually-hidden">2</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="footer-social-button" href="#">
+                <span class="visually-hidden">3</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="footer-social-button" href="#">
+                <span class="visually-hidden">4</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="footer-social-button" href="#">
+                <span class="visually-hidden">...</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="footer-social-button" href="#">
+                <span class="visually-hidden">10</span>
+              </a>
+            </li>
+          </ul>
+          <div class="resaults-quantity">
+            <label for="quantity">Гостиниц на странице:</label>
+            <select class="quantity" name="quantity">
+              <!--Тут квдратики тоже задам через голубой див со скруглениями несколько пикселей. Внутрь положу число-->
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          
+        </div>
+      </section>  
+      <section class="subscription">
+        <h2 class="visually-hidden">Подписка</h2>
+        <p class="section-title subscription-title">Подпишитесь на рассылку</p>
+        <p class="section-text subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="subscription-input" type="email" placeholder="Ваш e-mail" required>
+          <button class="subscription-button" type="submit">Подписаться</button>
+        </form> 
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+              <img class="social-icon" src="./images/contents/icons/vk.svg" alt="Логотип VK">
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+              <img class="social-icon" src="./images/contents/icons/telegram.svg" alt="Логотип телеграм">
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+              <img class="social-icon" src="./images/contents/icons/telegram.svg" alt="Логотип youtube">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+
+      <section class="footer-production">
+        <h2 class="visually-hidden">Компания разработчик</h2>
+        <a class="production-reference" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">.html academy</span>
+          <img class="production-icon" src="./images/contents/icons/html-academy.svg" alt="Логотип html-academy">
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
