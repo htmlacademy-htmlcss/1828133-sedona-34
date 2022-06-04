@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "PT Sans", "Georgia", serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/ptsans-400.woff2");
+}
+
+@font-face {
+    font-family: "PT Sans", "Georgia", serif;
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/ptsans-700.woff2");
+}
+
+body {
+    margin: 0;
+
+    font-family: "PT Sans", "Georgia", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
+/**----Header----**/
+
+.navigation-list{
+    list-style-type: none;
+}
+
+.navigation-link{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.button{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-basic{
+    background-color: #756157;  
+}
+
+.button-blue{
+    background-color: #82B3D3;
+}
+
+.button-big{
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.button-reset{
+    background-color: transparent;
+    font-weight: 400;
+}
+
+.button-disabled{
+    background-color: #F2F2F2;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+/**----Intro----**/
+
+.intro{
+    background-image: url('../images/decorations/intro-background.jpg');
+    background-repeat: no-repeat;
+}
+
+.section-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.section-subtitle{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+
+/**----Reasons----**/
+
+.reasons-list{
+    list-style-type: none;
+}
+
+.reason-header{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.reason-item-white{
+    color: #ffffff;
+    background-color: #82B3D3;
+}
+
+.reason-header-white{
+    color: #ffffff;
+    background-color: #82B3D3;
+}
+
+.services-list{
+    list-style-type: none;
+}
+
+/**----Subscription----**/
+
+.subscription{
+    color: #ffffff;
+
+    background-image: url('../images/decorations/subscribe-background.jpg');
+    background-repeat: no-repeat;
+}
+
+.subscription-background-none{
+    background-image: none;
+    color: #000000;
+}
+
+.subscription-form{
+    font-family: "PT Sans", "Georgia", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.subscription-input{
+    font-family: "PT Sans", "Georgia", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+/**----Footer----**/
+
+.footer-social-list{
+    list-style-type: none;
+}
+
+.footer-contacts-phone{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+
+    text-decoration: none;
+}
+
+
+/*************************
+***----Catalog page----***
+*************************/
+
+/**----Filter-hotels----**/
+
+.filter-hotels{
+    background-image: url('../images/decorations/filter-background-blur.jpg');
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+}
+
+.infrastructure-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+/**----Resaults----**/
+
+.resaults-priority{
+    font-family: "PT Sans", "Georgia", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.composition{
+    list-style: none;
+}
+
+.card-header{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+
+/**----Hotels-pagigation----**/
+
+.quantity{
+    font-family: "PT Sans", "Georgia", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
