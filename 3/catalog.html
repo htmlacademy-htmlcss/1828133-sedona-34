@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona-catalog</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <base href="https://htmlacademy-htmlcss.github.io/1828133-sedona-34/3/">
+</head>
+  <body>
+    <header class="page-header"> 
+      <nav class="navigation-header">
+        <a class="home-link" href="index.html">
+          <span class="visually-hidden">На главную</span>
+          <img class="header-logo" src="./images/contents/logo.png" alt="Логотип Седоны">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item"> 
+            <a class="navigation-link" href="#">Главная</a>
+          </li>
+          <li class="navigation-item"> 
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item"> 
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+
+        <ul class="navigation-list">
+          <li class="navigation-item"> 
+            <a class="navigation-link" href="#">
+              <img class="header-icon" src="./images/contents/icons/search.svg" alt="Лупа">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item"> 
+            <a class="navigation-link" href="#">
+              <img class="header-icon" src="./images/contents/icons/favorite.svg" alt="Сердечко">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="navigation-item"> 
+            <a class="button button-basic" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="filter-hotels">
+        <h1 class="hotels-title">Гостиницы Седоны</h1>
+        <form class="hotels-parameters" action="https://echo.htmlacademy.ru/courses" method="post">
+          <p class="hotels-subtitle">
+            <a class="footer-social-button" href="index.html">
+              <span class="visually-hidden">На главную</span>
+              <img class="subtitle-icon" src="./images/contents/icons/home-little.svg" alt="Маленький домик">
+            </a>
+            Гостиницы
+          </p>
+          <fieldset>
+            <legend class="infrastructure-title">Инфраструктура</legend>
+            <div class="hotels-infrastructure">
+              <input class="infrastructure-item" type="checkbox" id="infrastructure-pool" checked>
+              <label for="infrastructure-pool">Бассейн</label>
+              <input class="infrastructure-item" type="checkbox" id="infrastructure-parking">
+              <label for="infrastructure-parking">Парковка</label>
+              <input class="infrastructure-item" type="checkbox" id="infrastructure-wifi">
+              <label for="infrastructure-item">Wi-Fi</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="infrastructure-title">Тип жилья</legend>
+            <div class="hotels-type">
+              <input class="type-item" type="radio" name="hotels-type" id="type-hotel" checked>
+              <label for="type-hotel">Гостиница</label>
+              <input class="type-item" type="radio" name="hotels-type" id="type-motel">
+              <label for="type-motel">Мотель</label>
+              <input class="type-item" type="radio" name="hotels-type" id="type-apartments">
+              <label for="type-apartments">Апартаменты</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="infrastructure-title">Стоимость, &#8381:</legend>
+            <input class="cost-min" type="text" name="cost-min" id="cost-min" value="0">
+            <label for="cost-min">От</label>
+            <input class="cost-max" type="text" name="cost-max" id="cost-max" value="9000">
+            <label for="cost-max">До</label>
+          </fieldset>
+            <div class="hotels-buttons">
+              <button class="button button-blue" type="post" name="accept-button">Применить</button>
+              <button class="button button-reset" type="reset" name="reset-button">Сбросить</button>
+            </div>
+          
+        </form>
+      </section>
+
+      <section class="resaults">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <p class="section-title">Найдено гостиниц: 38</p>
+        <select class="resaults-priority" name="resaults-priority">
+          <!--Изменил value-->
+          <option value="lowprice">Сначала дешевые</option>
+          <option value="highprice">Сначала дорогие</option>
+          <option value="highrating">Сначала с высоким рейтингом</option>
+        </select>
+        <ul class="composition">
+            <li class="composition-item">
+                <a class="composition-button active" href="">
+                    <img class="composition-icon" src="./images/contents/icons/icon-table.svg" alt="Таблица">
+                </a>
+            </li>
+            <li>
+                <a class="composition-button" href="">
+                  <img class="composition-icon" src="./images/contents/icons/icon-slideshow.svg" alt="Слайд">
+                </a>
+            </li>
+            <li>
+                <a class="composition-button" href="">
+                  <img class="composition-icon" src="./images/contents/icons/icon-list.svg" alt="Список">
+                </a>
+            </li>
+        </ul>
+        <div class="resaults-cards">
+            <div class="resaults-card">
+                <img class="card-img" src="./images/decorations/hotels-photo/amara-resort-&-spa.jpg" alt="Гостиница Amara Resort and spa">
+                <a class="card-link" href="#">
+                  <h2 class="card-header">Amara resorts & Spa</h2>
+                </a>
+                <p class="card-type">Гостиница</p>
+                <p class="card-price">От 4000 ₽</p>
+                <a class="button button-basic" href="#">Подробнее</a>
+                <btn class="button button-blue" type="button">В избранное</btn>
+                <p class="card-stars">
+                  <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                  <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                  <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                  <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                  <!--Пока придумал два способа
+                      1)лепить нужное количество звезд
+                      2) задавайть класс абзацу cardstars например cardstars-four, а затем через css задать этому абзацу размножение звезд из одной в четыре-->
+                </p>
+                <btn class="button button-disabled" type="button" disabled>Рейтинг: 8,5</btn>      
+            </div>
+
+            <div class="resaults-card">
+              <img class="card-img" src="./images/decorations/hotels-photo/villas-at-poco-diablo.jpg" alt="Гостиница Villas at Poco Diablo">
+              <a class="card-link" href="#">
+                <h2 class="card-header">Villas at Poco Diablo</h2>
+              </a>
+              <p class="card-type">Гостиница</p>
+              <p class="card-price">От 5000 ₽</p>
+              <a class="button button-basic" href="#">Подробнее</a>
+              <btn class="button button-active" type="button">В избранном</btn>
+              <p class="card-stars">
+                <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+                <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+              </p>
+              <btn class="button button-disabled" type="button" disabled>Рейтинг: 9,2</btn>
+            </div>
+
+          <div class="resaults-card">
+            <img class="card-img" src="./images/decorations/hotels-photo/desert-quail-inn.jpg" alt="Гостиница Desert Quail Inn">
+            <a class="card-link" href="#">
+              <h2 class="card-header">Desert Quail Inn</h2>
+            </a>
+            <p class="card-type">Гостиница</p>
+            <p class="card-price">От 2500 ₽</p>
+            <a class="button button-basic" href="#">Подробнее</a>
+            <btn class="button button-blue" type="button">В избранное</btn>
+            <p class="card-stars">
+              <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+              <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+              <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+            </p>
+            <btn class="button button-disabled" type="button" disabled>Рейтинг: 6,9</btn>
+          </div>
+
+          <div class="resaults-card">
+            <img class="card-img" src="./images/decorations/hotels-photo/greentree-inn.jpg" alt="Гостиница GreenTree Inn">
+            <a class="card-link" href="#">
+              <h2 class="card-header">GreenTree Inn</h2>
+            </a>
+            <p class="card-type">Гостиница</p>
+            <p class="card-price">От 1500 ₽</p>
+            <a class="button button-basic" href="#">Подробнее</a>
+            <btn class="button button-blue" type="button">В избранное</btn>
+            <p class="card-stars">
+              <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+              <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
+            </p>
+            <btn class="button button-disabled" type="button" disabled>Рейтинг: 5,0</btn>
+          </div>
+        </div>
+        <div class="hotels-pagigation">
+          <ul class="pagination-list">
+            <!--Тут квдратики тоже задам через голубой див со скруглениями несколько пикселей. Внутрь положу число-->
+            <li class="pagination-item">
+              <a class="button button-disabled" href="#">
+                1
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue" href="#">
+                2
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue" href="#">
+                3
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue" href="#">
+                4
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue" href="#">
+                ...
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="button button-blue" href="#">
+                10
+              </a>
+            </li>
+          </ul>
+          <div class="resaults-quantity">
+            <label for="quantity">Гостиниц на странице:</label>
+            <select class="quantity" name="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+      </section>  
+      <section class="subscription subscription-background-none">
+        <h2 class="visually-hidden">Подписка</h2>
+        <p class="section-title">Подпишитесь на рассылку</p>
+        <p class="section-text subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="subscription-input" type="email" placeholder="Ваш e-mail" required>
+          <button class="button button-blue button-big" type="submit">Подписаться</button>
+        </form> 
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+              <img class="social-icon" src="./images/contents/icons/vk.svg" alt="Логотип VK">
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+              <img class="social-icon" src="./images/contents/icons/telegram.svg" alt="Логотип телеграм">
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+              <img class="social-icon" src="./images/contents/icons/telegram.svg" alt="Логотип youtube">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+
+      <section class="footer-production">
+        <h2 class="visually-hidden">Компания разработчик</h2>
+        <a class="production-reference" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">.html academy</span>
+          <img class="production-icon" src="./images/contents/icons/html-academy.svg" alt="Логотип html-academy">
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
