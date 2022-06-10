@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>Sedona-index</title>
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
+
   <body>
     <div class="page-container">
-      <header class="page-header"> 
+      <header class="page-header">
         <nav class="navigation-header">
           <a class="home-link" href="">
             <span class="visually-hidden">На главную</span>
             <img class="header-logo" src="./images/contents/logo.png" alt="Логотип Седоны">
           </a>
           <ul class="navigation-list">
-            <li class="navigation-item"> 
+            <li class="navigation-item">
               <a class="navigation-link" href="#">Главная</a>
             </li>
-            <li class="navigation-item"> 
+            <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-item"> 
+            <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <!--Видимо тут нужен user-listЮ а не navigation-list-->
-          <ul class="navigation-list user-list">
-            <li class="navigation-item"> 
-              <a class="navigation-link" href="#">
+
+          <ul class="user-list">
+            <li class="user-item">
+              <a class="user-link" href="#">
                 <img class="header-icon" src="./images/contents/icons/search.svg" alt="">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item"> 
-              <a class="navigation-link" href="#">
+            <li class="user-item">
+              <a class="user-link" href="#">
                 <img class="header-icon" src="./images/contents/icons/favorite.svg" alt="">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation-item"> 
+            <li class="user-item">
               <a class="button button-basic" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -46,16 +48,16 @@
       </header>
 
       <main>
-        <!--Посмотрел, что можно запихнуть две картинки в background-image: url(''), url('')-поигрался но не получилось-->
         <section class="intro">
           <h1 class="visually-hidden">Отдых в Седоне, штат Аризона</h1>
-          <img class="intro-welcome" src="./images/contents/welcome.svg" alt="Welcome To the gorgeous Sedona. Because the Grand Canyon sucks!">
-          </section>
-          <section class="slogan">
-            <h1 class="visually-hidden">Седона круче, чем Гранд-Каньон!</h1>
-            <p class="section-title">Седона — небольшой городок в Аризоне,
-              заслуживающий большего!</p>
-            <p class="section-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          <img class="intro-welcome" src="./images/contents/welcome.svg"
+            alt="Welcome To the gorgeous Sedona. Because the Grand Canyon sucks!">
+        </section>
+        <section class="slogan">
+          <h1 class="visually-hidden">Седона круче, чем Гранд-Каньон!</h1>
+          <p class="section-title">Седона — небольшой городок в Аризоне,
+            заслуживающий большего!</p>
+          <p class="section-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
         <!-- <section class="reasons">
@@ -74,7 +76,7 @@
               <ul class="services-list">
                 <li class="services-item">
                   <h3 class="reason-header">Жильё</h3>
-                  <span class="services-text">Рекомендуем пожить в настоящем мотеле, 
+                  <span class="services-text">Рекомендуем пожить в настоящем мотеле,
                     всё как в кино!</span>
                 </li>
                 <li class="services-item">
@@ -84,10 +86,10 @@
                 </li>
                 <li class="services-item">
                   <h3 class="reasons-header">Сувениры</h3>
-                  <span class="services-text">Не только китайского, 
+                  <span class="services-text">Не только китайского,
                     но и настоящего местного производства!</span>
                 </li>
-              </ul>   
+              </ul>
             </li>
 
             <li class="reasons-item reasons-item-white">
@@ -118,7 +120,7 @@
                 </li>
               </ul>
             </li>
-            
+
             <li class="reasons-item">
               <h3 class="reasons-header">Небольшая площадь</h3>
               <p class="reasons-number">-№ 3-</p>
@@ -136,13 +138,14 @@
             </li>
           </ul>
 
-          
+
         </section> -->
-        <!--Здесь я решил полностью переработать блок-->      
+        <!--Здесь я решил полностью переработать блок-->
+
         <section class="reasons">
           <h2 class="visually-hidden">Преимущества Cедоны</h2>
           <ul class="reasons-list">
-            <li class="reasons-item">
+            <li class="reasons-item illustrated-item">
               <div class="reasons-text">
                 <h3 class="reasons-header reasons-header-white">Настоящий городок</h3>
                 <p class="reasons-number">-№ 1-</p>
@@ -151,24 +154,18 @@
               <img class="reasons-photo" src="./images/decorations/reasons-photo-1.jpg" alt="Панорама на мост дьявола">
             </li>
             <li class="reasons-item housing">
-              <div class="reasons-text">
-                <h3 class="reasons-header">Жильё</h3>
-                <span class="services-text">Рекомендуем пожить в настоящем мотеле всё как в кино!</span>
-              </div>
+              <h3 class="reasons-header">Жильё</h3>
+              <span class="services-text">Рекомендуем пожить в настоящем мотеле всё как в кино!</span>
             </li>
             <li class="reasons-item food">
-              <div class="reasons-text">
-                <h3 class="reasons-header">Еда</h3>
-                <span class="services-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</span>
-              </div>
+              <h3 class="reasons-header">Еда</h3>
+              <span class="services-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</span>
             </li>
             <li class="reasons-item souvenirs">
-              <div class="reasons-text">
-                <h3 class="reasons-header">Сувениры</h3>
-                <span class="services-text">Не только китайского, но и настоящего местного производства!</span>
-              </div>
+              <h3 class="reasons-header">Сувениры</h3>
+              <span class="services-text">Не только китайского, но и настоящего местного производства!</span>
             </li>
-            <li class="reasons-item">
+            <li class="reasons-item illustrated-item">
               <div class="reasons-text">
                 <h3 class="reason-header reasons-header-white">Там есть мост дьявола</h3>
                 <p class="reasons-number">-№ 2-</p>
@@ -177,25 +174,19 @@
               <img class="reasons-photo" src="./images/decorations/reasons-photo-2.jpg" alt="Панорама на мост дьявола">
             </li>
             <li class="reasons-item">
-              <div class="reasons-text">
-                <h3 class="reasons-header">Небольшая площадь</h3>
-                <p class="reasons-number">-№ 3-</p>
-                <p class="reasons-description">Все достопримечательности находятся очень близко</p>
-              </div>
+              <h3 class="reasons-header">Небольшая площадь</h3>
+              <p class="reasons-number">-№ 3-</p>
+              <p class="reasons-description">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="reasons-item">
-              <div class="reasons-text">
-                <h3 class="reasons-header">Красивая дорога</h3>
-                <p class="reasons-number">-№ 4-</p>
-                <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </div>
+              <h3 class="reasons-header">Красивая дорога</h3>
+              <p class="reasons-number">-№ 4-</p>
+              <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="reasons-item">
-              <div class="reasons-text">
-                <h3 class="reasons-header">Мало туристов</h3>
-                <p class="reasons-number">-№ 5-</p>
-                <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
+              <h3 class="reasons-header">Мало туристов</h3>
+              <p class="reasons-number">-№ 5-</p>
+              <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ul>
         </section>
@@ -203,21 +194,21 @@
         <section class="booking">
           <h2 class="visually-hidden">Бронирование</h2>
           <p class="section-title booking-title">Заинтересовались?</p>
-          <p class="section-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="section-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+            в
+            Седоне</p>
           <button class="button button-basic button-big">Поиск гостиницы в Седоне</button>
         </section>
 
         <section class="subscription">
-          <!-- <img class="subscription-background" src="./images/decorations/subscribe-background.jpg" alt="Размытый вид на долину"> -->
-          <div class="subscription-content">
-            <h2 class="visually-hidden">Подписка</h2>
-            <p class="section-title">Подпишитесь на рассылку</p>
-            <p class="section-text subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="subscription-input" type="email" placeholder="Ваш e-mail" required>
-              <button class="button button-blue button-big" type="submit">Подписаться</button>
-            </form>
-          </div> 
+          <h2 class="visually-hidden">Подписка</h2>
+          <p class="section-title">Подпишитесь на рассылку</p>
+          <p class="section-text subscription-text">Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="subscription-input" type="email" placeholder="Ваш e-mail" required>
+            <button class="button button-blue button-big" type="submit">Подписаться</button>
+          </form>
         </section>
       </main>
 
@@ -260,4 +251,5 @@
       </footer>
     </div>
   </body>
+
 </html>
