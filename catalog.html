@@ -17,7 +17,7 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -27,20 +27,20 @@
             </li>
           </ul>
 
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img class="header-icon" src="./images/contents/icons/search.svg" alt="Лупа">
+          <ul class="user-list">
+            <li class="user-item">
+              <a class="user-link" href="#">
+                <img class="header-icon" src="./images/contents/icons/search.svg" alt="">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img class="header-icon" src="./images/contents/icons/favorite.svg" alt="Сердечко">
+            <li class="user-item">
+              <a class="user-link" href="#">
+                <img class="header-icon" src="./images/contents/icons/favorite.svg" alt="">
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="user-item">
               <a class="button button-basic" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -65,7 +65,7 @@
                 <label for="infrastructure-pool">Бассейн</label>
                 <input class="infrastructure-item" type="checkbox" id="infrastructure-parking">
                 <label for="infrastructure-parking">Парковка</label>
-                <input class="infrastructure-item" type="checkbox" id="infrastructure-wifi">
+                <!-- <input class="infrastructure-item" type="checkbox" id="infrastructure-wifi"> -->
                 <label for="infrastructure-wifi">Wi-Fi</label>
               </fieldset>
               <fieldset class="filter-column">
@@ -74,7 +74,7 @@
                 <label for="type-hotel">Гостиница</label>
                 <input class="type-item" type="radio" name="hotels-type" id="type-motel">
                 <label for="type-motel">Мотель</label>
-                <input class="type-item" type="radio" name="hotels-type" id="type-apartments">
+                <!-- <input class="type-item" type="radio" name="hotels-type" id="type-apartments"> -->
                 <label for="type-apartments">Апартаменты</label>
               </fieldset>
               <fieldset class="filter-column">
@@ -95,7 +95,7 @@
         <section class="resaults">
           <header class="resaults-header">
             <h2 class="visually-hidden">Результаты поиска</h2>
-            <p class="section-title">Найдено гостиниц: 38</p>
+            <p class="section-title resaults-title">Найдено гостиниц: 38</p>
             <select class="resaults-priority" name="resaults-priority">
               <option value="lowprice">Сначала дешевые</option>
               <option value="highprice">Сначала дорогие</option>
@@ -130,14 +130,16 @@
               <p class="card-type">Гостиница</p>
               <p class="card-price">От 4000 ₽</p>
               <a class="button button-basic" href="#">Подробнее</a>
-              <btn class="button button-blue" type="button">В избранное</btn>
+              <button class="button button-blue" type="button">В избранное</button>
               <p class="card-stars">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
               </p>
-              <btn class="button button-disabled" type="button" disabled>Рейтинг: 8,5</btn>
+              <div class="rating">
+                Рейтинг: 8,5
+              </div>
             </div>
 
             <div class="resaults-card">
@@ -149,14 +151,16 @@
               <p class="card-type">Гостиница</p>
               <p class="card-price">От 5000 ₽</p>
               <a class="button button-basic" href="#">Подробнее</a>
-              <btn class="button button-active" type="button">В избранном</btn>
+              <button class="button button-active" type="button">В избранном</button>
               <p class="card-stars">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
               </p>
-              <btn class="button button-disabled" type="button" disabled>Рейтинг: 9,2</btn>
+              <div class="rating">
+                Рейтинг: 9,2
+              </div>
             </div>
 
             <div class="resaults-card">
@@ -168,13 +172,15 @@
               <p class="card-type">Гостиница</p>
               <p class="card-price">От 2500 ₽</p>
               <a class="button button-basic" href="#">Подробнее</a>
-              <btn class="button button-blue" type="button">В избранное</btn>
+              <button class="button button-blue" type="button">В избранное</button>
               <p class="card-stars">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
               </p>
-              <btn class="button button-disabled" type="button" disabled>Рейтинг: 6,9</btn>
+              <div class="rating">
+                Рейтинг: 6,9
+              </div>
             </div>
 
             <div class="resaults-card">
@@ -186,18 +192,20 @@
               <p class="card-type">Гостиница</p>
               <p class="card-price">От 1500 ₽</p>
               <a class="button button-basic" href="#">Подробнее</a>
-              <btn class="button button-blue" type="button">В избранное</btn>
+              <button class="button button-blue" type="button">В избранное</button>
               <p class="card-stars">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
                 <img class="star-icon" src="./images/contents/icons/star.svg" alt="Звезда">
               </p>
-              <btn class="button button-disabled" type="button" disabled>Рейтинг: 5,0</btn>
+              <div class="rating">
+                Рейтинг: 5,0
+              </div>
             </div>
           </div>
           <div class="hotels-pagination">
             <ul class="pagination-list">
               <li class="pagination-item button-disabled">
-                <a class="button" href="#">
+                 <a class="button" href="#">
                   1
                 </a>
               </li>
@@ -269,7 +277,7 @@
             <li class="footer-social-item">
               <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
-                <img class="social-icon" src="./images/contents/icons/telegram.svg" alt="Логотип youtube">
+                <img class="social-icon" src="./images/contents/icons/youtube.svg" alt="Логотип youtube">
               </a>
             </li>
           </ul>
