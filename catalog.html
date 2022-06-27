@@ -11,7 +11,7 @@
     <div class="page-container">
       <header class="page-header">
         <nav class="navigation-header">
-          <a class="home-link" href="index.html" title="На главную">
+          <a class="home-link" href="index.html">
             <span class="visually-hidden">На главную</span>
             <img class="header-logo" src="./images/contents/logo.png" alt="Логотип Седоны">
           </a>
@@ -60,10 +60,10 @@
           <h1 class="hotels-title">Гостиницы Седоны</h1>
           <form class="hotels-parameters" action="https://echo.htmlacademy.ru/courses" method="post">
             <p class="hotels-subtitle">
-              <a class="string-navigation" href="index.html" title="На главную">
+              <a class="string-navigation" href="index.html">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z"/>
+                    d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z" />
                 </svg>
                 <span class="visually-hidden">На главную</span>
               </a>
@@ -114,7 +114,7 @@
             </select>
             <ul class="composition">
               <li class="composition-item active">
-                <button class="button-composition" href="">
+                <a class="button-composition active-button-composition" href="">
                   <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 0H0V6H4V0Z" />
@@ -124,29 +124,31 @@
                     <path d="M16 8H12V14H16V8Z" />
                     <path d="M10 8H6V14H10V8Z" />
                   </svg>
-                </button>
+                </a>
               </li>
               <li class="composition-item">
-                <button class="button-composition" href="">
-                  <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 12H0V14H16V12Z"/>
-                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z"/>
+                <a class="button-composition" href="">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 12H0V14H16V12Z" />
+                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
                   </svg>
-                </button>
+                </a>
               </li>
               <li class="composition-item">
-                <button class="button-composition" href="">
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 0H0V2H2V0Z"/>
-                  <path d="M16 0H4V2H16V0Z"/>
-                  <path d="M2 4H0V6H2V4Z"/>
-                  <path d="M16 4H4V6H16V4Z"/>
-                  <path d="M2 8H0V10H2V8Z"/>
-                  <path d="M16 8H4V10H16V8Z"/>
-                  <path d="M2 12H0V14H2V12Z"/>
-                  <path d="M16 12H4V14H16V12Z"/>
-                </svg>
-                </button>
+                <a class="button-composition" href="">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 0H0V2H2V0Z" />
+                    <path d="M16 0H4V2H16V0Z" />
+                    <path d="M2 4H0V6H2V4Z" />
+                    <path d="M16 4H4V6H16V4Z" />
+                    <path d="M2 8H0V10H2V8Z" />
+                    <path d="M16 8H4V10H16V8Z" />
+                    <path d="M2 12H0V14H2V12Z" />
+                    <path d="M16 12H4V14H16V12Z" />
+                  </svg>
+                </a>
               </li>
             </ul>
           </header>
@@ -178,7 +180,7 @@
               <p class="card-price">От 5000 ₽</p>
               <a class="button button-basic" href="#">Подробнее</a>
               <button class="button button-green" type="button">В избранном</button>
-                <p class="card-stars stars4"></p>
+              <p class="card-stars stars4"></p>
               <div class="rating">
                 Рейтинг: 9,2
               </div>
