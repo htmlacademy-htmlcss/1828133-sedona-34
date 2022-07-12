@@ -268,6 +268,7 @@
               </label>
               <input class="date-input" id="arrival-date" type="text" value="27 апреля 2020" required>
               <button class="calendar-button calendar-button-arrival" type="button">
+                <span class="visually-hidden">Выбрать дату заезда.</span>
                 <svg class="calendar-decoration" width="15" height="15" viewBox="0 0 15 15" fill="currentControl"
                   xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.3">
@@ -301,6 +302,7 @@
               </label>
               <input class="date-input" id="depature-date" type="text" value="1 сентября 2021" required>
               <button class="calendar-button calendar-button-depature" type="button">
+                <span class="visually-hidden">Выбрать дату выезда.</span>
                 <svg class="calendar-decoration" width="15" height="15" viewBox="0 0 15 15" fill="currentControl"
                   xmlns="http://www.w3.org/2000/svg">
                   <g opacity="0.3">
@@ -335,10 +337,14 @@
                   Взрослые:
                 </label>
                 <span class="counter-wrapper">
-                  <button class="counter-button counter-button-adults-minus" type="button"></button>
+                  <button class="counter-button counter-button-adults-minus" type="button">
+                    <span class="visually-hidden">Убрать одного взрослого путешественника.</span>
+                  </button>
                   <input class="counter-input adults-counter-input" type="number" id="adults-counter" value="2"
                     required>
-                  <button class="counter-button counter-button-adults-plus" type="button"></button>
+                  <button class="counter-button counter-button-adults-plus" type="button">
+                    <span class="visually-hidden">Добавить одного взрослого путешественника.</span>
+                  </button>
                 </span>
               </p>
               <p class="form-unit form-unit-half">
@@ -357,10 +363,14 @@
                   </span>
                 </span>
                 <span class="counter-wrapper">
-                  <button class="counter-button counter-button-children-minus" type="button"></button>
-                  <input class="counter-input children-counter-input" type="number" id="children-counter" value="2"
+                  <button class="counter-button counter-button-children-minus" type="button">
+                    <span class="visually-hidden">Убрать одного юного путешественника.</span>
+                  </button>
+                  <input class="counter-input children-counter-input" type="number" id="children-counter" value="1"
                     required>
-                  <button class="counter-button counter-button-children-plus" type="button"></button>
+                  <button class="counter-button counter-button-children-plus" type="button">
+                    <span class="visually-hidden">Добавить одного юного путешественника.</span>
+                  </button>
                 </span>
               </p>
             </div>
