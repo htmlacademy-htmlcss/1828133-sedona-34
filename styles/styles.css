@@ -643,6 +643,10 @@ input[type="number"] {
 
   font-size: 22px;
   line-height: 26px;
+  color: #ffffff;
+}
+
+.subscription-background-none .subscription-text {
   color: #333333;
 }
 
